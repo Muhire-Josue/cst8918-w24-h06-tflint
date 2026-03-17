@@ -1,11 +1,13 @@
 # Define config variables
-variable "labelPrefix" {
+variable "label_prefix" {
+  description = "Prefix used for resource names."
   type        = string
-  description = "Your college username. This will form the beginning of various resource names."
 }
 
 variable "region" {
-  default = "westus3"
+  description = "Azure region where resources will be deployed."
+  type        = string
+  default     = "southafricanorth"
 }
 
 variable "admin_username" {
